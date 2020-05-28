@@ -41,18 +41,19 @@ h2 {
     text-align: center;
 }
 
-.alignleft {
+/* .alignleft {
     float: left;
 }
 
 .alignright {
     float: right;
-}
+} */
 
 .vl {
     border-top: 1px solid rgb(8, 8, 8);
     width: 60%;
 }
+
 
 
 /* ================================= 
@@ -91,18 +92,42 @@ h2 {
     text-transform: uppercase;
 }
 
-.bottom-nav a {
+.footer-nav a {
     color: #363232;
 }
 
 .main-nav a:hover,
-.bottom-nav a:hover {
+.footer-nav a:hover {
     color: #093a58;
 }
 
-.alignleft,
+/* .alignleft,
 .alignright {
     font-weight: 900;
+} */
+
+.Marcus {
+    float: left;
+    height: 12px;
+    line-height: 12px;
+}
+
+.footer-nav {
+    text-align: right;
+    padding-top: 1em;
+}
+
+.li {
+    display: inline-block;
+    margin-right: 40px;
+}
+
+.top, .footer-nav li:last-child {
+    margin-right: 0;
+}
+
+.full {
+    display: none;
 }
 
 /* ---- Layout Containers ---- */
@@ -221,18 +246,27 @@ p#one {
 
 .container {
     display: flex;
-    flex-direction: row;
+    /* flex-direction: row;
+    flex-wrap: wrap; */
 }
 
-.item {
-    order: 1;
+.marketing,
+.search {
+    
 }
-
 
 
     
 /* --- Footer ------ */
 
+
+.top {
+display: none;
+}
+.full {
+display: inline-block;
+margin-left: 20px;
+}
 
 
 /* ---- Float clearfix ---- */
