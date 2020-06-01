@@ -14,7 +14,7 @@ body {
 
 .skills {
     font-family: monospace;
-    font-size: 1.5em;
+    font-size: 1.25em;
 }
 
 a {
@@ -33,18 +33,13 @@ h2 {
     text-align: center;
 }
 
-
-#one{
-	font-size: 1.35em;
+p {
     text-align: center;
 }
 
-#two {
+#one {
     font-size: 1.25em;
-    margin-bottom: 1.5em;
-    text-align: center;
 }
-
 
 .vl {
     border-top: 1px solid rgb(8, 8, 8);
@@ -121,7 +116,8 @@ h2 {
     margin-right: 40px;
 }
 
-.top, .footer-nav li:last-child {
+.top, 
+.footer-nav li:last-child {
     margin-right: 0;
 }
 
@@ -148,14 +144,21 @@ h2 {
     margin: auto;
 }
 
-.container,
-.skills {
+.container {
     padding-top: .5em;
     padding-left: 1.5em;
     padding-right: 1.5em; 
     padding-bottom: 3em;
     margin: auto;
     background: rgb(238, 231, 231);
+}
+
+.skills1 {
+    padding-top: 1.5em;
+    padding-left: 1.5em;
+    padding-right: 1.5em; 
+    padding-bottom: 3em;
+    margin: auto; 
 }
 
 .skills {
@@ -166,7 +169,7 @@ h2 {
 .bottom-nav {
     text-align: center;
     background: #f5f5f5;
-    padding-top: 3.5em;
+    padding-top: 1.5em;
     padding-bottom: 3.5em;
     padding-left: 1.5em;
     padding-right: 1.5em;
@@ -181,6 +184,7 @@ h2 {
 
 .portfolio {
     padding-top: 2em;
+    padding-bottom: 0.25em;
     text-align: center;
     background: rgb(238, 231, 231);
 }
@@ -236,11 +240,11 @@ p#one {
 }
 
 .item1 {
-    width: 22em;
+    width: 42%;
 }
 
 .item2 {
-    width: 22em;
+    width: 42%;
 }
 
     
@@ -263,7 +267,7 @@ margin-left: 20px;
     display: table;
     clear: both;
 }
-    
+ 
 }
 
 @media (min-width: 1024px) {
@@ -278,9 +282,17 @@ margin-left: 20px;
 }
 
 .container {
-    flex-direction: row;
-    flex-wrap: wrap;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
 }
 
+.item1 {
+    width: 32%;
+}
+
+.item2 {
+    width: 32%;
+}
 
 }
